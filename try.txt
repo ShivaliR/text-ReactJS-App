@@ -1,1 +1,1 @@
-Hello, I am trying to make changes in git hub
+Hello, i am checking git diff command.
