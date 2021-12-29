@@ -5,7 +5,7 @@ import TextForm from "./components/TextForm";
 function App() {
   return (
     <>
-      <Navbar title="Every word counts" aboutText="About Us" />
+      <Navbar title="Word Counter Application" aboutText="About Us" />
       <div className="container my-3">
         {/* //container is a class of bootstrap */}
         <TextForm heading="Word Counter" />

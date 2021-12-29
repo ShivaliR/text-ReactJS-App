@@ -6,8 +6,9 @@ export default function Navbar(props) {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href={props.link}>
-          {props.title}
+          <i>{props.title}</i>
         </a>
+        <img src = "%PUBLIC_URL%/favicon.png" />
         <button
           className="navbar-toggler"
           type="button"
