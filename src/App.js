@@ -15,33 +15,33 @@ function App() {
   const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
   const [alert, setAlert] = useState(null);
 
-  const showAlert = (message, type)=>{
+  const showAlert = (type, message)=>{
       setAlert({
-        msg: message,
-        type: type
+        type: type,
+        message: message
       })
       setTimeout(() => {
           setAlert(null);
-      }, 1500);
+      }, 1000);
   }
 
   const toggleMode = ()=>{
     if(mode === 'light'){
       setMode('dark');
       document.body.style.backgroundColor = '#042743';
-      showAlert("Dark mode has been enabled", "success");
+      showAlert("success", "Dark mode has been enabled !");
     }
     else{
       setMode('light');
       document.body.style.backgroundColor = 'white';
-      showAlert("Light mode has been enabled", "success");
+      showAlert("success", "Dark mode has been disabled !");
     }
   }
   return (
     <>
     <Router>
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} />
-    <Alert alert={alert}/>
+    <Navbar title="Textutils" mode={mode} toggleMode={toggleMode} key={new Date()} />
+    {/* <Alert alert={alert}/> */}
     <div className="container my-3">
     <Switch>
     {/* /users --> Component 1
@@ -50,7 +50,7 @@ function App() {
             <About mode={mode} />
           </Route>
           <Route exact path="/">
-            <TextForm showAlert={showAlert} heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode}/>
+            <TextForm showAlert={showAlert} heading="Wordcounter App" mode={mode}/>
           </Route>
     </Switch>
     </div>
