@@ -93,7 +93,7 @@ export default function TextForm(props) {
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
                 <a
-                  href="/"
+                  href="#"
                   className="dropdown-item"
                   onClick={convertToUpperCase}
                 >
@@ -102,7 +102,7 @@ export default function TextForm(props) {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#"
                   className="dropdown-item"
                   onClick={convertToLowerCase}
                 >
@@ -111,7 +111,7 @@ export default function TextForm(props) {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#"
                   className="dropdown-item"
                   onClick={convertToSentenceCase}
                 >
@@ -120,7 +120,7 @@ export default function TextForm(props) {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="#"
                   className="dropdown-item"
                   onClick={convertToTitleCase}
                 >
