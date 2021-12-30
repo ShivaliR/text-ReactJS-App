@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { a } from "react-router-dom";
 var undoVal="",redoVal = "";
 export default function TextForm(props) {
   const convertToUpperCase = () => {
@@ -92,40 +92,40 @@ export default function TextForm(props) {
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
-                <Link
-                  to="#"
+                <a
+                  href="/"
                   className="dropdown-item"
                   onClick={convertToUpperCase}
                 >
                   UPPERCASE
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#"
+                <a
+                  href="/"
                   className="dropdown-item"
                   onClick={convertToLowerCase}
                 >
                   lowercase
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#"
+                <a
+                  href="/"
                   className="dropdown-item"
                   onClick={convertToSentenceCase}
                 >
                   Sentence case
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#"
+                <a
+                  href="/"
                   className="dropdown-item"
                   onClick={convertToTitleCase}
                 >
                   Title Case
-                </Link>
+                </a>
               </li>
               {/* <li><a className="dropdown-item" href="#">Something else here</a></li> */}
             </ul>
